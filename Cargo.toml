@@ -20,7 +20,7 @@ maintenance = { status = "actively-developed" }
 name = "rusqlite"
 
 [workspace]
-members = ["libsqlite3-sys"]
+members = ["libsqlite3-sys", "rusqlite-types"]
 
 [features]
 load_extension = []
@@ -124,6 +124,10 @@ bencher = "0.1"
 [dependencies.libsqlite3-sys]
 path = "libsqlite3-sys"
 version = "0.22.1"
+
+[dependencies.rusqlite-types]
+path = "rusqlite-types"
+version = "0.1.0"
 
 [[test]]
 name = "config_log"
